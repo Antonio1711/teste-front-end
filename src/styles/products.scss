@@ -1,0 +1,72 @@
+@import 'global.scss';
+
+.products {
+    margin-top: 50px;
+
+    .top {
+        display: flex;
+        justify-content: space-evenly;
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            color: $black;
+        }
+
+        .menu {
+            button {
+                background-color: #fff;
+                border: 1px solid $gray2;
+                border-radius: 5px;
+                color: $gray-font;
+                font-weight: 900;
+                width: 142px;
+                height: 41px;
+                margin: 0px 5px;
+
+                &:nth-child(2) {
+                    background-color: $primary-yellow;
+                    color: #fff;
+                }
+
+                &:nth-child(3) {
+                    width: 110px;
+                }
+            }
+
+            .arrowBtn {
+                background-color: #fff;
+                width: 32px;
+                height: 32px;
+                border: none;
+                border-radius: 100%;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .rightArrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .prodList {
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            background: transparent;
+            height: 7px;
+        }     
+        
+        &::-webkit-scrollbar-thumb {
+            background: $gray-font;
+            border-radius: 20px;
+        }
+    }
+}

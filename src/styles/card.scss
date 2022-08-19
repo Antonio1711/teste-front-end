@@ -1,0 +1,83 @@
+@import 'global.scss';
+
+.cardProds {
+    display: flex;
+    width: 213px;
+    height: 414px;
+    margin: 30px 5vw 0px;
+
+    .discount {
+        color: $primary-yellow;
+        font-weight: 700;
+        font-size: 14px;
+        width: 100px;
+        height: 40px;
+    }
+
+    .prodInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+        }
+
+        .prodName {
+            color: $black;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        .prices {
+            .oldPrice {
+                color: $gray-font;
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration-line: line-through;
+            }
+
+            .price {
+                color: $black;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+            h4 {
+                color: $black;
+                font-weight: 600;
+                font-size: 12px;
+
+                strong {
+                    color: $primary-yellow;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                background-color: $primary-yellow;
+                border: 1px solid $suport-collor;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 900;
+                width: 220px;
+                height: 48px;
+                margin-top: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}

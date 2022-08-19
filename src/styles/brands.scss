@@ -1,0 +1,79 @@
+@import "global.scss";
+
+.brands {
+    margin-top: 50px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: $black;
+            font-weight: 700;
+            font-size: 32px;
+            margin-left: 10vw;
+        }
+
+        a {
+            color: $primary-yellow;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 9vw;
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        button {
+            background-color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1) {
+                left: 10px;
+            }
+
+            &:nth-child(3) {
+                right: 10px;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .leftArrow {
+            transform: rotate(90deg);
+        }
+
+        .rightArrow {
+            transform: rotate(270deg);
+        }
+
+        .cardGroup {
+            display: grid;
+            grid-template-columns: 178px 178px 178px 178px 178px 178px;
+            grid-column-gap: 25px;
+
+            .card {
+                height: 178px;
+                border: 1px solid $gray2;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

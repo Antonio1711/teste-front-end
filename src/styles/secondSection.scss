@@ -1,0 +1,104 @@
+@import "global.scss";
+
+.secSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .leftSide {
+        text-align: center;
+        margin-left: 10vw;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            background-image: url('assets/secondSection/photo1.png');
+            width: 574px;
+            height: 350px;
+            border-radius: 20px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 40px;
+                color: #fff;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #fff;
+                width: 181px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: $primary-yellow;
+                border: 1px solid $suport-collor;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 900;
+                width: 131px;
+                height: 48px;
+                margin-top: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .rightSide {
+        .card {
+            display: flex;
+            justify-content: space-between;
+            width: 630px;
+            height: 350px;
+            border-radius: 20px 0px 0px 20px;
+            background-color: $background;
+            padding-left: 30px;
+
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h2 {
+                    color: $black;
+                    width: 199px;
+                    font-weight: 700;
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: $gray-font;
+                    width: 295px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                button {
+                    background-color: $primary-yellow;
+                    border: 1px solid $suport-collor;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-weight: 900;
+                    width: 131px;
+                    height: 48px;
+    
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

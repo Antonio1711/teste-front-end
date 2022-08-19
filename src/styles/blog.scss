@@ -1,0 +1,129 @@
+@import "global.scss";
+
+.blog {
+    margin-top: 50px;
+
+    h2 {
+        color: $black;
+        font-weight: 700;
+        font-size: 32px;
+        margin-left: 10vw;
+    }
+
+    .dots {
+        margin-left: 50vw;;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        button {
+            background-color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1) {
+                left: 10px;
+            }
+
+            &:nth-child(3) {
+                right: 10px;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .leftArrow {
+            transform: rotate(90deg);
+        }
+
+        .rightArrow {
+            transform: rotate(270deg);
+        }
+
+        .cardGroup {
+            display: grid;
+            grid-template-columns: 277px 277px 277px 277px;
+            grid-column-gap: 25px;
+
+
+            .card {
+                height: 419px;
+                border-radius: 20px;
+                background-color: $background;
+                display: flex;
+                flex-direction: column;
+
+                .cardImg {
+                    height: 160px;
+                    width: 100%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    margin-bottom: 25px;
+
+                    &#card1 {
+                        background-image: url('assets/blog/photo1.png');
+                    }
+
+                    &#card2 {
+                        background-image: url('assets/blog/photo2.png');
+                    }
+
+                    &#card3 {
+                        background-image: url('assets/blog/photo3.png');
+                    }
+
+                    &#card4 {
+                        background-image: url('assets/blog/photo4.png');
+                    }
+                }
+
+                .info {
+                    margin-left: 25px;
+
+                    h3 {
+                        color: $black;
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: $gray-font;
+                        font-weight: 400;
+                        font-size: 14px;
+                        width: 229px;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                        background-color: $primary-yellow;
+                        border: 1px solid $suport-collor;
+                        border-radius: 5px;
+                        color: #fff;
+                        font-weight: 900;
+                        width: 131px;
+                        height: 48px;
+                        margin-top: 20px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

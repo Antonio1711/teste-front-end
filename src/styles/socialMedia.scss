@@ -1,0 +1,31 @@
+@import "global.scss";
+
+.socialMedia {
+    margin-top: 50px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: $black;
+            font-weight: 700;
+            font-size: 32px;
+            margin-left: 10vw;
+        }
+
+        a {
+            color: $primary-yellow;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 9vw;
+        }
+    }
+
+    section {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
